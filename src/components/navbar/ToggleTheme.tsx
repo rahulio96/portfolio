@@ -8,7 +8,6 @@ const ToggleTheme = () => {
 
     useEffect(() => {
         const root = document.documentElement
-
         // update variables based on theme
         if (theme === "dark") {
             root.style.setProperty("--black", "#0A0A0A")
@@ -31,7 +30,7 @@ const ToggleTheme = () => {
 
     return (
         <button
-            className='outline-[var(--green)] outline-2 px-4 py-1.5 text-[var(--green)] 
+            className='border-[var(--green)] border-2 px-4 py-1.5 text-[var(--green)] 
                 cursor-pointer hover:bg-[var(--green)] hover:text-[var(--black)] 
                 transition duration-400 ease-in-out'
             onClick={toggleTheme}

@@ -6,7 +6,7 @@ import React, {
   useMemo,
   useState,
 } from "react";
-import { motion, AnimatePresence, Transition } from "framer-motion";
+import { motion, AnimatePresence, Transition, delay } from "framer-motion";
 
 function cn(...classes: (string | undefined | null | boolean)[]): string {
   return classes.filter(Boolean).join(" ");
@@ -41,6 +41,8 @@ export interface RotatingTextProps
   mainClassName?: string;
   splitLevelClassName?: string;
   elementLevelClassName?: string;
+  keyword?: string;
+  setFlag: (flag: boolean) => void;
 }
 
 const RotatingText = forwardRef<RotatingTextRef, RotatingTextProps>(
@@ -63,6 +65,8 @@ const RotatingText = forwardRef<RotatingTextRef, RotatingTextProps>(
       mainClassName,
       splitLevelClassName,
       elementLevelClassName,
+      keyword,
+      setFlag,
       ...rest
     },
     ref
@@ -82,6 +86,12 @@ const RotatingText = forwardRef<RotatingTextRef, RotatingTextProps>(
 
     const elements = useMemo(() => {
       const currentText: string = texts[currentTextIndex];
+      if (currentText == keyword) {
+        setTimeout(function () { setFlag(true) }, 900);
+
+      } else {
+        setTimeout(function () { setFlag(false) }, 500);
+      }
       if (splitBy === "characters") {
         const words = currentText.split(" ");
         return words.map((word, i) => ({
