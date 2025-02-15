@@ -11,7 +11,9 @@ const Home = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className="flex flex-col justify-center items-center">
+            className="flex flex-col justify-center items-center pt-85"
+            id='Home'
+        >
             <motion.div
                 initial={{ transform: "translateX(calc(-50%-100vw))" }}
                 animate={{ transform: "translateX(0px)" }}
