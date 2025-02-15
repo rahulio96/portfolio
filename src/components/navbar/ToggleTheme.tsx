@@ -17,7 +17,7 @@ const ToggleTheme = () => {
         } else {
             root.style.setProperty("--black", "#E5E5E3")
             root.style.setProperty("--white", "#0A0A0A")
-            root.style.setProperty("--darkgrey", "#2E2E2E")
+            root.style.setProperty("--lightgrey", "#2E2E2E")
             root.style.setProperty("--darkgrey", "#D3D3D3")
         }
 

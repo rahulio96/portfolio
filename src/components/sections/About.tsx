@@ -5,7 +5,7 @@ const About = () => {
   return (
     <Section id={'About'} title={'About Me'}>
       <motion.div
-        className='mt-5 space-y-4 sm:mt-10 sm:space-y-9 text-[var(--white)]'
+        className='space-y-4 sm:space-y-9 text-[var(--white)] text-xl sm:text-3xl'
 
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
