@@ -71,7 +71,7 @@ interface MobileNavbarProps {
 
 const MobileNavbar = ({ selected, setSelected, isToggled, setIsToggled, isClicked, setIsClicked }: MobileNavbarProps) => {
   return (
-    <div className={`${isToggled ? 'top-[4rem]' : 'top-[-50%]'} fixed sm:hidden z-1 transition-all duration-500 ease-in-out`}>
+    <div className={`${isToggled ? 'top-[3.6rem]' : 'top-[-50%]'} fixed sm:hidden z-1 transition-all duration-500 ease-in-out`}>
       <div className='flex flex-col justify-center items-center w-full bg-[var(--darkgrey)] text-[1.1rem] font-bold overflow-hidden'>
         {buttons.map((button, index) => (
           <NavbarButton

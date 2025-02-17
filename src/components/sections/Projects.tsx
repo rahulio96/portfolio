@@ -70,7 +70,7 @@ const mnist = new Project(
 )
 
 const pharmaStudy = new Project(
-    'Pharmaceutical Study Simulator',
+    'Pharma Study Simulator',
     'Co-led a team of 7 to build a pharmaceutical study web app for Vendia.',
     ['React', 'Firebase', 'Agile'],
     [['GitHub', 'https://github.com/Angkaram/Pharmaceutical-Study-Web-App-Project'], ['Demo', 'https://www.youtube.com/watch?v=K2LDj28C5iA']],
@@ -98,14 +98,15 @@ const ProjectBox = ({ project }: { project: Project }) => {
         >
             <img src={project.src} className='w-full h-auto'/>
             <motion.div
-                className={`absolute h-full w-full bottom-0 left-0 bg-[var(--white)] text-[var(--black)] font-semibold text-[0.8rem] lg:text-[1rem] py-1.5 px-2 lg:p-4`}
-                initial={{ y: '100%' }}
-                animate={{ y: isHover ? '0%' : '100%' }}
+                className={`absolute h-full w-full bottom-0 left-0 bg-[var(--white)] text-[var(--black)] font-semibold text-[0.8rem] lg:text-[1rem] p-2.5`}
+                initial={{ y: '100%', opacity: 0 }}
+                animate={{ y: isHover ? '0%' : '100%', opacity: isHover ? 1 : 0 }}
                 transition={{ duration: 0.35, ease: "easeInOut" }}
             >
-                <div className="flex flex-col justify-start h-full">
-                    <h3 className='text-[var(--red)] text-xl md:text-3xl font-bold mb-0.5 lg:mb-3'>{project.title}</h3>
-                    <p className='mb-0 lg:mb-4'>{project.desc}</p>
+                <div className="flex flex-col justify-start h-full  
+                    space-y-1 min-[24.688rem]:space-y-5 sm:space-y-1.5 min-[63.75rem]:space-y-2.5">
+                    <h3 className='text-[var(--red)] text-xl min-[20.938rem]:text-2xl min-[54.063rem]:text-3xl font-bold'>{project.title}</h3>
+                    <p>{project.desc}</p>
                     <Buttons color='black' buttons={project.buttons} isSmall={true} />
                     <SkillTags skills={project.skills} color='darkgrey' isSmall={true} />
                 </div>
@@ -117,7 +118,7 @@ const ProjectBox = ({ project }: { project: Project }) => {
 const Projects = () => {
     return (
         <Section id={'Projects'} title={'Projects'}>
-            <div className='grid min-[38rem]:grid-cols-2 gap-4'>
+            <div className='grid gap-4 grid-cols-1 sm:grid-cols-2 min-[94.375rem]:grid-cols-3'>
                 {projectList.map((project, index) => (
                     <ProjectBox key={index} project={project} />
                 ))}

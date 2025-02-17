@@ -5,7 +5,7 @@ const Section = ({ children, id, title }: { children: ReactNode, id: string, tit
   return (
     <div 
         id={id}
-        className='px-3 sm:px-0 sm:w-[37.5rem] md:w-[45.8rem] lg:w-[56.2rem] sm:text-2xl md:text-3xl py-40 mt-56'
+        className='px-3 md:px-[5rem] lg:px-[15%] sm:text-2xl md:text-3xl py-40 mt-56'
     >
         <Header title={title} />
         {children}
