@@ -6,7 +6,7 @@ import React, {
   useMemo,
   useState,
 } from "react";
-import { motion, AnimatePresence, Transition, delay } from "framer-motion";
+import { motion, AnimatePresence, Transition } from "framer-motion";
 
 function cn(...classes: (string | undefined | null | boolean)[]): string {
   return classes.filter(Boolean).join(" ");
@@ -74,13 +74,6 @@ const RotatingText = forwardRef<RotatingTextRef, RotatingTextProps>(
     const [currentTextIndex, setCurrentTextIndex] = useState<number>(0);
 
     const splitIntoCharacters = (text: string): string[] => {
-      if (typeof Intl !== "undefined" && Intl.Segmenter) {
-        const segmenter = new Intl.Segmenter("en", { granularity: "grapheme" });
-        return Array.from(
-          segmenter.segment(text),
-          (segment) => segment.segment
-        );
-      }
       return Array.from(text);
     };
 

@@ -6,12 +6,16 @@ const ExternalLink = ({ text, link, color, isSmall = false }: { text: string, li
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className={`border-2 border-[var(--${color})] cursor-pointer
-                font-medium text-[var(--${color})] hover:bg-[var(--${color})]
-                hover:text-[var(--black)] transition duration-400 ease-in-out ` +
+            className={`border-2 cursor-pointer
+                font-medium hover:text-[var(--black)] transition duration-400 ease-in-out ` +
                 (isSmall ?
-                    'text-[0.9rem] min-[49.5rem]:text-[1.2rem] hover:text-[var(--white)] px-3 py-1 mb-1 min-[49.5rem]:px-5 min-[49.5rem]:py-2 min-[49.5rem]:mb-3' :
-                    'sm:text-xl px-5 py-2 mb-3')
+                    'text-[0.9rem] min-[49.5rem]:text-[1.2rem] hover:text-[var(--white)] px-3 py-1 mb-1 min-[49.5rem]:px-5 min-[49.5rem]:py-2 min-[49.5rem]:mb-3 ' :
+                    'sm:text-xl px-5 py-2 mb-3 ') +
+
+                // Need to use hardcoded values for black and white otherwise it breaks
+                (color === 'black' ? 'border-[var(--black)] text-[var(--black)] hover:bg-[var(--black)]' 
+                    : color === 'white' ? 'border-[var(--white)] text-[var(--white)] hover:bg-[var(--white)]' 
+                    : `border-[var(--${color})] text-[var(--${color})] hover:bg-[var(--${color})]`)
             }
         >
             {text}
