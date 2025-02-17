@@ -96,7 +96,7 @@ const ProjectBox = ({ project }: { project: Project }) => {
             onMouseEnter={mouseIn}
             onMouseLeave={mouseOut}
         >
-            <img src={project.src} />
+            <img src={project.src} className='w-full h-auto'/>
             <motion.div
                 className={`absolute h-full w-full bottom-0 left-0 bg-[var(--white)] text-[var(--black)] font-semibold text-[0.8rem] lg:text-[1rem] py-1.5 px-2 lg:p-4`}
                 initial={{ y: '100%' }}
@@ -116,7 +116,7 @@ const ProjectBox = ({ project }: { project: Project }) => {
 
 const Projects = () => {
     return (
-        <Section id={'projects'} title={'Projects'}>
+        <Section id={'Projects'} title={'Projects'}>
             <div className='grid min-[38rem]:grid-cols-2 gap-4'>
                 {projectList.map((project, index) => (
                     <ProjectBox key={index} project={project} />

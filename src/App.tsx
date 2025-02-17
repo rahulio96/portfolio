@@ -1,5 +1,6 @@
 import Navbar from "./components/navbar/Navbar"
 import About from "./components/sections/About"
+import Contact from "./components/sections/Contact"
 import Experience from "./components/sections/Experience"
 import Home from "./components/sections/Home"
 import Projects from "./components/sections/Projects"
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Experience />
       <Projects />
+      <Contact />
       <div className='h-96' />
     </div>
   )
