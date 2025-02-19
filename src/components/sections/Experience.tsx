@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import Buttons from '../Buttons'
+import { Buttons } from '../Buttons'
 import Section from '../Section'
 import SkillTags from '../SkillTags'
 
