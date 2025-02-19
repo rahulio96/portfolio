@@ -41,7 +41,7 @@ const compass = new Project(
     'Compass for Canvas',
     'Placed 4th at Hornet Hacks 2024 for developing an AI-powered web app that helps students find course information.',
     ['React', 'TypeScript', 'Tailwind CSS'],
-    [['GitHub', 'https://github.com/rahulio96/discord-bot'], ['Demo', 'https://www.youtube.com/watch?v=nKx--FjSrU4&t=9s']],
+    [['GitHub', 'https://github.com/Desarso/canvas-rag-knead-uhjahb'], ['Demo', 'https://www.youtube.com/watch?v=nKx--FjSrU4&t=9s']],
     'projects/Compass.png'
 )
 
@@ -49,7 +49,7 @@ const digitRecognizer = new Project(
     'Digit Recognizer',
     'Built and deployed a web that allows users to draw digits and have a neural network predict the digit.',
     ['React', 'Flask', 'AWS'],
-    [['GitHub', 'https://github.com/rahulio96/discord-bot'], ['View', 'https://drawdigits.netlify.app/']],
+    [['GitHub', 'https://github.com/rahulio96/Digit-Recognition-App'], ['View', 'https://drawdigits.netlify.app/']],
     'projects/Digits.png'
 )
 
@@ -82,6 +82,11 @@ const projectList = [chemTrack, discordBot, compass, digitRecognizer, minesweepe
 const ProjectBox = ({ project }: { project: Project }) => {
     const [isHover, setIsHover] = useState(false)
 
+    const itemVariants = {
+        hidden: { opacity: 0, y: 20 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+    }
+
     const mouseIn = () => {
         setIsHover(true)
     }
@@ -91,12 +96,13 @@ const ProjectBox = ({ project }: { project: Project }) => {
     }
 
     return (
-        <div
+        <motion.div
             className='overflow-hidden relative'
             onMouseEnter={mouseIn}
             onMouseLeave={mouseOut}
+            variants={itemVariants}
         >
-            <img src={project.src} className='w-full h-auto'/>
+            <img src={project.src} className='w-full h-auto' />
             <motion.div
                 className={`absolute h-full w-full bottom-0 left-0 bg-[var(--white)] text-[var(--black)] font-semibold text-[0.8rem] lg:text-[1rem] p-2.5`}
                 initial={{ y: '100%', opacity: 0 }}
@@ -111,18 +117,34 @@ const ProjectBox = ({ project }: { project: Project }) => {
                     <SkillTags skills={project.skills} color='darkgrey' isSmall={true} />
                 </div>
             </motion.div>
-        </div>
+        </motion.div>
     )
 }
 
 const Projects = () => {
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.2,
+            },
+        },
+    }
+
     return (
         <Section id={'Projects'} title={'Projects'}>
-            <div className='grid gap-4 grid-cols-1 sm:grid-cols-2 min-[94.375rem]:grid-cols-3'>
+            <motion.div
+                className='grid gap-4 grid-cols-1 sm:grid-cols-2 min-[94.375rem]:grid-cols-3'
+                variants={containerVariants}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+            >
                 {projectList.map((project, index) => (
                     <ProjectBox key={index} project={project} />
                 ))}
-            </div>
+            </motion.div>
         </Section>
     )
 }
