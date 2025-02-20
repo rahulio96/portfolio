@@ -7,6 +7,7 @@ import Section from '../Section'
 import SocialButton from '../SocialButton'
 import { send, init } from '@emailjs/browser'
 import { toast } from 'react-toastify'
+import { motion } from 'framer-motion'
 
 const LINKEDIN_LINK = 'https://www.linkedin.com/in/rahulgupta96/'
 const HANDSHAKE_LINK = 'https://csus.joinhandshake.com/profiles/g6hf7y'
@@ -68,11 +69,23 @@ const Contact = () => {
 
   return (
     <Section id={'Contact'} title={'Contact'}>
-      <p className='text-[var(--white)] text-xl sm:text-3xl'>
+      <motion.p
+        className='text-[var(--white)] text-xl sm:text-3xl'
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true, amount: 0.3 }}
+      >
         Got a question or want to collaborate? Drop your details, and I'll be in touch soon!
-      </p>
-      <div className='flex flex-col min-[69.375rem]:flex-row min-[69.375rem]:justify-between min-[69.375rem]:items-start
-        justify-center items-center w-full mt-10'>
+      </motion.p>
+      <motion.div
+        className='flex flex-col min-[69.375rem]:flex-row min-[69.375rem]:justify-between min-[69.375rem]:items-start
+        justify-center items-center w-full mt-10'
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 1 }}
+      >
         <form className='flex flex-col space-y-5 w-full min-[69.375rem]:w-[50%]'>
           <input
             type="text"
@@ -124,7 +137,7 @@ const Contact = () => {
           </SocialButton>
         </div>
 
-      </div>
+      </motion.div>
     </Section>
   )
 }
