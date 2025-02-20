@@ -38,7 +38,7 @@ const NavbarButton = ({ index, title, selected, setSelected, setIsToggled, hasLi
     if (isClicked) {
       setTimeout(() => setIsClicked(false), 500);
     }
-    
+
     // mobile only behavior
     if (setIsToggled) {
       setTimeout(function () { setIsToggled(false) }, 150);
@@ -92,7 +92,7 @@ const MobileNavbar = ({ selected, setSelected, isToggled, setIsToggled, isClicke
 
 
 // Navbar component
-const Navbar = () => {
+const Navbar = ({ setToastTheme }: { setToastTheme: (str: string) => void }) => {
   const [selected, setSelected] = useState(0)
   const [isToggled, setIsToggled] = useState(false)
 
@@ -138,7 +138,7 @@ const Navbar = () => {
           </div>
 
           <div className='ml-0 pl-2 sm:pl-5 md:pl-10 sm:ml-auto'>
-            <ToggleTheme />
+            <ToggleTheme setToastTheme={setToastTheme} />
           </div>
 
           <button className='sm:hidden p-1' onClick={() => setIsToggled(!isToggled)}>

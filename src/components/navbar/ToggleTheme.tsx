@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Sun from "../../assets/icons/Sun";
 import Moon from "../../assets/icons/Moon";
 
-const ToggleTheme = () => {
+const ToggleTheme = ({ setToastTheme }: { setToastTheme: (str: string) => void }) => {
     // Get theme from local storage or set to dark by default
     const [theme, setTheme] = useState(() => localStorage.getItem("theme") || "dark")
 
@@ -14,11 +14,13 @@ const ToggleTheme = () => {
             root.style.setProperty("--white", "#E5E5E3")
             root.style.setProperty("--darkgrey", "#2E2E2E")
             root.style.setProperty("--lightgrey", "#D3D3D3")
+            setToastTheme('dark')
         } else {
             root.style.setProperty("--black", "#E5E5E3")
             root.style.setProperty("--white", "#0A0A0A")
             root.style.setProperty("--lightgrey", "#2E2E2E")
             root.style.setProperty("--darkgrey", "#D3D3D3")
+            setToastTheme('light')
         }
 
         localStorage.setItem("theme", theme)
