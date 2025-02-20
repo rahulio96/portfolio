@@ -15,6 +15,7 @@ const GITHUB_LINK = 'https://github.com/rahulio96'
 const EMAIL_LINK = 'mailto:rahulgithub96@gmail.com'
 
 const textInputStyle = 'text-[var(--white)] text-xl sm:text-2xl bg-[var(--darkgrey)] p-4'
+const invalidInputStyle = 'border-2 border-[var(--green)]'
 
 const emailToast = { isLoading: false, closeButton: true, autoClose: 4000 }
 
@@ -65,6 +66,7 @@ const Contact = () => {
     setName('')
     setEmail('')
     setSubject('')
+    setIsClicked(false)
   }
 
   return (
@@ -89,20 +91,20 @@ const Contact = () => {
         <form className='flex flex-col space-y-5 w-full min-[69.375rem]:w-[50%]'>
           <input
             type="text"
-            className={`${textInputStyle} ${(isClicked && !name) && 'border-2 border-[var(--white)]'}`}
+            className={`${textInputStyle} ${(isClicked && !name) && invalidInputStyle}`}
             placeholder='Name'
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
           <input
             type="text"
-            className={`${textInputStyle} ${(isClicked && !email) && 'border-2 border-[var(--white)]'}`}
+            className={`${textInputStyle} ${(isClicked && (!email || !isValidEmail)) && invalidInputStyle}`}
             placeholder='Email'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           <textarea
-            className={`${textInputStyle} ${(isClicked && !subject) && 'border-2 border-[var(--white)]'} h-[15rem]`}
+            className={`${textInputStyle} ${(isClicked && !subject) && invalidInputStyle} h-[15rem]`}
             placeholder='Subject'
             value={subject}
             onChange={(e) => setSubject(e.target.value)}
