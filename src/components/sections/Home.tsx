@@ -1,10 +1,18 @@
 import { motion } from "framer-motion";
 import RotatingText from "../../blocks/TextAnimations/RotatingText";
 import { useState } from "react";
+import ReactGA from 'react-ga4'
 
 const Home = () => {
 
     const [isAn, setIsAn] = useState(false);
+
+    const handleResumeClick = () => {
+        ReactGA.event({
+            category: "Links",
+            action: "View Resume",
+        })
+    }
 
     return (
         <motion.div
@@ -40,6 +48,7 @@ const Home = () => {
             <a
                 href="https://drive.google.com/file/d/1ufNKIZ8lNfL62nl5G0L03uPOf0hr-vxU/view?usp=sharing"
                 target="_blank"
+                onClick={handleResumeClick}
                 rel="noopener noreferrer"
                 className='px-10 py-2 sm:px-15 sm:py-3 border-2 sm:border-3 border-[var(--red)] cursor-pointer
                     font-medium text-xl sm:text-3xl text-[var(--red)]
