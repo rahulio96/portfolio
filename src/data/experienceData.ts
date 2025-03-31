@@ -13,7 +13,7 @@ export const experiences: JobExperience[] = [
         date: "APR 2024 - NOV 2024",
         title: "Frontend Software Engineer @ eUnity",
         desc: "Developed and designed the user interface and screens of eUnity, a dating industry startup mobile app. "
-            + "Implemented several pages, modals, and reusable UI components for key features of the app including initial user setup, premium purchase, and user profile settings",
+            + "Implemented several pages, modals, and reusable UI components for key features of the app including initial user setup, premium purchase, and user profile settings.",
         skills: ["Flutter", "Figma"],
     },
 
