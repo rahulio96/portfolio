@@ -30,7 +30,7 @@ const ProjectBox = ({ project }: { project: Project }) => {
         >
             <img src={project.src} alt={project.alt} className='w-full h-auto' />
             <motion.div
-                className={`absolute h-full w-full bottom-0 left-0 bg-[var(--white)] text-[var(--black)] font-semibold text-[0.8rem] lg:text-[1rem] p-2.5`}
+                className={`overflow-y-auto absolute h-full w-full bottom-0 left-0 bg-[var(--white)] text-[var(--black)] font-semibold text-[0.8rem] lg:text-[1rem] p-2.5`}
                 initial={{ y: '100%', opacity: 0 }}
                 animate={{ y: isHover ? '0%' : '100%', opacity: isHover ? 1 : 0 }}
                 transition={{ duration: 0.35, ease: "easeInOut" }}

@@ -11,10 +11,10 @@ export const projects: Project[] = [
     // ChemTrack
     {
         title: 'ChemTrack',
-        desc: 'Designed and currently developing the ChemTrack iOS and Android mobile app.',
+        desc: 'Designed, developed, and deployed the ChemTrack mobile app for a client.',
         src: 'projects/ChemTrack.png',
-        alt: 'Blue background with a phone and the following text: ChemTrack: A chemical inventory manager with QR code scanning built for schools. Coming soon to Android and iOS.',
-        skills: ['React Native', 'TypeScript', 'Figma', 'Go'],
+        alt: 'Blue background with a phone and the following text: ChemTrack: A chemical inventory manager with QR code scanning built for schools. Built for Android and iOS devices.',
+        skills: ['React Native', 'Expo', 'TypeScript', 'Figma', 'Go', 'Jest', 'Agile'],
         buttons: [
             ['GitHub', 'https://github.com/ekjyotshinh/ChemTrack']
         ],
@@ -36,7 +36,7 @@ export const projects: Project[] = [
     {
         title: 'Compass for Canvas',
         desc: 'Placed 4th at Hornet Hacks 2024 for developing an AI-powered web app that helps students find course information.',
-        skills: ['React', 'TypeScript', 'Tailwind CSS'],
+        skills: ['React', 'TypeScript', 'Tailwind CSS', 'Python'],
         alt: 'White background with title: Compass for Canvas: Chat with your college courses. Shows a laptop with the compass website.',
         buttons: [
             ['GitHub', 'https://github.com/Desarso/canvas-rag-knead-uhjahb'],
