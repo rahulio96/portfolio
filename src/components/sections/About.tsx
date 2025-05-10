@@ -14,7 +14,7 @@ const About = () => {
 
         transition={{ duration: 1 }}
       >
-        <p>I’m a computer science student and ACM club treasurer at CSU Sacramento graduating in May 2025.</p>
+        <p>I’m a computer science student and ACM club treasurer at CSU Sacramento, graduating in December 2025.</p>
         <p>I have experience as a frontend developer at an early-stage startup where I designed and developed a mobile app.</p>
         <p>I’ve also been a software engineer intern and made several open source contributions to a project with over 17 million users.</p>
         <p>I’m always looking forward to learning, working with talented people, and making impactful contributions to widely-used software.</p>

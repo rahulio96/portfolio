@@ -11,7 +11,7 @@ export const projects: Project[] = [
     // ChemTrack
     {
         title: 'ChemTrack',
-        desc: 'Designed, developed, and deployed the ChemTrack mobile app for a client.',
+        desc: 'Collaborated on a 9-month client project to design and develop ChemTrack, a mobile app deployed via Apple TestFlight, as part of a team of 8.',
         src: 'projects/ChemTrack.png',
         alt: 'Blue background with a phone and the following text: ChemTrack: A chemical inventory manager with QR code scanning built for schools. Built for Android and iOS devices.',
         skills: ['React Native', 'Expo', 'TypeScript', 'Figma', 'Go', 'Jest', 'Agile'],
@@ -23,7 +23,7 @@ export const projects: Project[] = [
     // Discord Bot
     {
         title: 'Discord Standup Bot',
-        desc: 'Developed a Discrod bot that automates and faciliates daily standup meetings.',
+        desc: 'Developed a Discord bot that automates daily standup meetings. Used by a team of 8 in an Agile development environment.',
         src: 'projects/Discord.png',
         alt: 'Grey background with title: Standup Bot with a discord logo. Shows a message from standup bot prompting the user to fill out their daily standup update.',
         skills: ['JavaScript', 'Node.js', 'AWS'],
@@ -86,7 +86,7 @@ export const projects: Project[] = [
     // Pharma Study
     {
         title: 'Pharma Study Simulator',
-        desc: 'Co-led a team of 7 to build a pharmaceutical study web app for Vendia.',
+        desc: 'Co-led a team of 7 for 5 months to build a pharmaceutical study web app for Vendia Inc.',
         src: 'projects/Pharma.png',
         alt: 'Blue background with title: Pharmaceutical Study Simulator. Shows the pharmaceutical study web on a laptop and phone.',
         skills: ['React', 'Firebase', 'Agile'],
