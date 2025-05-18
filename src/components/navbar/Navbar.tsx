@@ -22,11 +22,10 @@ interface NavbarButtonProps {
   setSelected: (index: number) => void
   hasLine: boolean
   setIsToggled?: (isToggled: boolean) => void
-  isClicked: boolean
   setIsClicked: (isClicked: boolean) => void
 }
 
-const NavbarButton = ({ index, title, selected, setSelected, setIsToggled, hasLine, isClicked, setIsClicked }: NavbarButtonProps) => {
+const NavbarButton = ({ index, title, selected, setSelected, setIsToggled, hasLine, setIsClicked }: NavbarButtonProps) => {
   const onClick = () => {
     setSelected(index)
     setIsClicked(true)
@@ -35,9 +34,7 @@ const NavbarButton = ({ index, title, selected, setSelected, setIsToggled, hasLi
     document.getElementById(title)?.scrollIntoView({ behavior: "smooth" });
 
     // prevent the navbar buttons from changing when scrolling down
-    if (isClicked) {
-      setTimeout(() => setIsClicked(false), 500);
-    }
+    setTimeout(() => setIsClicked(false), 500);
 
     // mobile only behavior
     if (setIsToggled) {
@@ -69,7 +66,7 @@ interface MobileNavbarProps {
   setIsClicked: (isClicked: boolean) => void
 }
 
-const MobileNavbar = ({ selected, setSelected, isToggled, setIsToggled, isClicked, setIsClicked }: MobileNavbarProps) => {
+const MobileNavbar = ({ selected, setSelected, isToggled, setIsToggled, setIsClicked }: MobileNavbarProps) => {
   return (
     <div className={`${isToggled ? 'top-[3.6rem]' : 'top-[-50%]'} fixed sm:hidden z-1 transition-all duration-500 ease-in-out`}>
       <div className='flex flex-col justify-center items-center w-full bg-[var(--darkgrey)] text-[1.1rem] font-bold overflow-hidden'>
@@ -82,7 +79,6 @@ const MobileNavbar = ({ selected, setSelected, isToggled, setIsToggled, isClicke
             setSelected={setSelected}
             hasLine={false}
             setIsToggled={setIsToggled}
-            isClicked={isClicked}
             setIsClicked={setIsClicked}
           />))}
       </div>
@@ -108,6 +104,7 @@ const Navbar = ({ setToastTheme }: { setToastTheme: (str: string) => void }) => 
 
     const observerCallback: IntersectionObserverCallback = (entries) => {
       entries.forEach((entry) => {
+        console.log(isClicked)
         if (entry.isIntersecting && !isClicked) {
           setSelected(buttons.indexOf(entry.target.id));
         }
@@ -133,7 +130,7 @@ const Navbar = ({ setToastTheme }: { setToastTheme: (str: string) => void }) => 
           <div className='hidden sm:flex font-bold lg:text-2xl'>
             <Line indexLeft={0} indexRight={0} selected={selected} />
             {buttons.map((button, index) => (
-              <NavbarButton key={index} index={index} title={button} selected={selected} setSelected={setSelected} hasLine={true} isClicked={isClicked} setIsClicked={setIsClicked} />
+              <NavbarButton key={index} index={index} title={button} selected={selected} setSelected={setSelected} hasLine={true} setIsClicked={setIsClicked} />
             ))}
           </div>
 
