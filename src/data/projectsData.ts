@@ -16,7 +16,8 @@ export const projects: Project[] = [
         alt: 'Blue background with a phone and the following text: ChemTrack: A chemical inventory manager with QR code scanning built for schools. Built for Android and iOS devices.',
         skills: ['React Native', 'Expo', 'TypeScript', 'Figma', 'Go', 'Jest', 'Agile'],
         buttons: [
-            ['GitHub', 'https://github.com/ekjyotshinh/ChemTrack']
+            ['GitHub', 'https://github.com/ekjyotshinh/ChemTrack'],
+            ['Demo GIF', 'https://imgur.com/a/chemtrack-demo-h9Tlx1o']
         ],
     },
 

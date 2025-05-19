@@ -1,9 +1,8 @@
-// src/data/experience.ts
 export interface JobExperience {
     date: string;
     title: string;
     desc: string;
-    skills: string[];
+    skills?: string[];
     buttons?: [string, string][];
 }
 

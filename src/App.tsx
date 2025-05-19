@@ -7,6 +7,7 @@ import Home from "./components/sections/Home"
 import Projects from "./components/sections/Projects"
 import { ToastContainer } from 'react-toastify'
 import ReactGA from 'react-ga4'
+import Involvement from "./components/sections/Involvement"
 
 function App() {
   const [toastTheme, setToastTheme] = useState('dark')
@@ -28,6 +29,7 @@ function App() {
       <About />
       <Experience />
       <Projects />
+      <Involvement />
       <Contact />
     </div>
   )

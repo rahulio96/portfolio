@@ -1,11 +1,11 @@
 import Section from '../Section'
-import {experiences} from '../../data/experienceData'
+import {experiences} from '../../data/involvementData'
 import ExperienceItem from '../ExperienceItem'
 
-// Full experience section
-const Experience = () => {
+// Full involvement section
+const Involvement = () => {
   return (
-    <Section id={'Experience'} title={'Experience'}>
+    <Section id={'Involvement'} title={'Involvement'}>
       <div className='space-y-10'>
         {experiences.map((exp, index) =>(
           <ExperienceItem key={index} exp={exp} />
@@ -15,4 +15,4 @@ const Experience = () => {
   )
 }
 
-export default Experience
+export default Involvement

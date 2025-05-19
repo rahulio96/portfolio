@@ -4,7 +4,7 @@ import ToggleTheme from "./ToggleTheme"
 import { useEffect, useState } from "react";
 
 // Button names and section names
-const buttons = ['Home', 'About', 'Experience', 'Projects', 'Contact']
+const buttons = ['Home', 'About', 'Experience', 'Projects', 'Involvement', 'Contact']
 
 // Vertical line between navbar buttons
 const Line = ({ indexLeft, indexRight, selected }: { indexLeft: number, indexRight: number, selected: number }) => {
