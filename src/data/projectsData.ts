@@ -8,6 +8,19 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+    // Offline AI
+    {
+        title: 'Offline AI',
+        desc: 'Developing a desktop app that allows users to run AI models locally with Ollama, giving users full control over their data.',
+        src: 'projects/OfflineAI.png',
+        alt: 'Dark red/orange background with title: Offline AI: A local, private desktop app for LLMs. Shows a laptop with the Offline AI app open, with the app\s logo on top.',
+        skills: ['React', 'TypeScript', 'Ollama', 'Tauri', 'Rust'],
+        buttons: [
+            ['GitHub', 'https://github.com/rahulio96/offline-ai'],
+            ['Install', 'https://github.com/rahulio96/offline-ai/releases/']
+        ],
+    },
+
     // ChemTrack
     {
         title: 'ChemTrack',
