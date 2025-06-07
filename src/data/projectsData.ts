@@ -11,13 +11,13 @@ export const projects: Project[] = [
     // Offline AI
     {
         title: 'Offline AI',
-        desc: 'Developing a desktop app that allows users to run AI models locally with Ollama, giving users full control over their data.',
+        desc: 'Developing a desktop app that allows users to run AI models locally with Ollama, giving them full control over their data.',
         src: 'projects/OfflineAI.png',
         alt: 'Dark red/orange background with title: Offline AI: A local, private desktop app for LLMs. Shows a laptop with the Offline AI app open, with the app\s logo on top.',
-        skills: ['React', 'TypeScript', 'Ollama', 'Tauri', 'Rust'],
+        skills: ['React', 'TypeScript', 'Ollama', 'Tauri', 'Rust', 'SQLite'],
         buttons: [
             ['GitHub', 'https://github.com/rahulio96/offline-ai'],
-            ['Install', 'https://github.com/rahulio96/offline-ai/releases/']
+            ['Download', 'https://github.com/rahulio96/offline-ai/releases/']
         ],
     },
 
@@ -40,7 +40,7 @@ export const projects: Project[] = [
         desc: 'Developed a Discord bot that automates daily standup meetings. Used by a team of 8 in an Agile development environment.',
         src: 'projects/Discord.png',
         alt: 'Grey background with title: Standup Bot with a discord logo. Shows a message from standup bot prompting the user to fill out their daily standup update.',
-        skills: ['JavaScript', 'Node.js', 'AWS'],
+        skills: ['JavaScript', 'Node.js', 'AWS', 'SQLite'],
         buttons: [
             ['GitHub', 'https://github.com/rahulio96/discord-bot']
         ],
