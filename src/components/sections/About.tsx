@@ -11,11 +11,10 @@ const About = () => {
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 1 }}
       >
-        <p>I’m a computer science student and former ACM club treasurer at CSU Sacramento, graduating in December 2025.</p>
-        <p>I have experience as a frontend developer at an early-stage startup where I designed and developed a mobile app.</p>
-        <p>I’ve also been a software engineer intern at a non-profit and made several open source contributions to a project with over 17 million users.</p>
-        <p>I’m always looking forward to learning, working with talented people, and making impactful contributions to widely-used software.</p>
-
+        <p>I’m a computer science student at CSU Sacramento, graduating in December 2025, with hands-on experience building real-world software across startups, non-profits, and open-source communities.</p>
+        <p>At Intel, I’m onboarding as a Software Debug Intern, where my work will focus on Python development and automation. Previously, I built key mobile app features as a Frontend Developer at an early-stage startup.</p>
+        <p>I’ve contributed to open-source tools like npm (used by 17M+ developers), and led teams in delivering full-stack apps, including a chemical inventory manager mobile app for a client and an AI-powered education tool built during a hackathon.</p>
+        <p>I’m passionate about learning, collaborating with talented people, and building impactful software that serves real users.</p>
       </motion.div>
     </Section>
   )

@@ -5,7 +5,7 @@ export const experiences: JobExperience[] = [
     {
         date: "MAY 2025 - ONGOING",
         title: "Tech Fellow @ CodePath",
-        desc: "Assisting students and staff for CodePath's remote Intermediate Technical Interview Prep (TIP 102) course.",
+        desc: "Currently supporting a remote cohort of 250+ students in CodePath’s TIP 102 course by providing mentorship and guiding students through data structures and algorithms problems.",
         buttons: [
             ["CodePath", "http://www.codepath.org"],
         ],
