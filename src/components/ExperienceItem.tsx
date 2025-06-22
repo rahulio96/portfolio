@@ -14,7 +14,7 @@ const ExperienceItem = ({ exp }: { exp: JobExperience }) => {
   return (
     <motion.div
       className='flex flex-col space-y-2'
-      initial={{ opacity: 0, transform: "translateX(calc(-50%-100vw))" }}
+      initial={{ opacity: 0, transform: "translateX(calc(-30%-100vw))" }}
       whileInView={{ opacity: 1, transform: "translateX(0px)" }}
       transition={{ type: "spring", stiffness: 25, duration: 0.5 }}
       viewport={{ once: true, amount: 0.1 }}
