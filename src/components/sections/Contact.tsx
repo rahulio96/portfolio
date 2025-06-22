@@ -72,7 +72,7 @@ const Contact = () => {
   return (
     <Section id={'Contact'} title={'Contact'}>
       <motion.p
-        className='text-[var(--white)] text-xl sm:text-3xl'
+        className='text-center sm:text-left text-[var(--white)] text-xl sm:text-3xl'
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1 }}
@@ -111,7 +111,7 @@ const Contact = () => {
           />
 
           <button
-            className='px-10 py-2 sm:px-15 sm:py-3 border-2 sm:border-3 w-fit
+            className='self-center sm:self-auto px-10 py-2 sm:px-15 sm:py-3 border-2 sm:border-3 w-fit
              border-[var(--white)] text-[var(--white)] font-medium text-xl sm:text-3xl 
              cursor-pointer hover:bg-[var(--white)] hover:text-[var(--black)] transition duration-400 ease-in-out'
             onClick={sendEmail}

@@ -76,7 +76,7 @@ export const projects: Project[] = [
     // Minesweeper
     {
         title: 'Minesweeper',
-        desc: 'Re-created Minesweeper using Java, LWJGL, and OpenGL with a custom game engine',
+        desc: 'Re-created Minesweeper using Java, LWJGL, and OpenGL with a custom game engine.',
         src: 'projects/Minesweeper.png',
         alt: 'Dark grey background with orange title: Minesweeper. Shows a screenshot of the minesweeper game with a large cursor and another screenshot of the minesweeper game but all mines and treasure are exposed.',
         skills: ['Java'],

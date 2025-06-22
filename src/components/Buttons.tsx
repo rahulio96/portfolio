@@ -40,7 +40,7 @@ interface ButtonsProps {
 
 export const Buttons = ({ buttons, color, isSmall = false }: ButtonsProps) => {
     return (
-        <div className={'flex flex-wrap space-x-2 sm:space-x-5 items-center ' + (isSmall ? 'items-center' : 'my-1 sm:my-2')}>
+        <div className={'flex flex-wrap space-x-2 sm:space-x-5 ' + (isSmall ? 'items-center' : 'my-1 sm:my-2')}>
             {buttons.map(([title, link], index) => (
                 <ExternalLink
                     key={index}

@@ -7,7 +7,7 @@ interface HeaderProps {
 const Header = ({ title }: HeaderProps) => {
   return (
     <motion.h1
-      className='mb-5 sm:mb-10 justify-start items-start text-[var(--red)] font-bold text-4xl sm:text-5xl md:text-[3.3rem] lg:text-7xl'
+      className='text-center sm:text-left mb-5 sm:mb-10 justify-start items-start text-[var(--red)] font-bold text-4xl sm:text-5xl md:text-[3.3rem] lg:text-7xl'
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
