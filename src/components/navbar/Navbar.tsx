@@ -44,7 +44,7 @@ const NavbarButton = ({ index, title, selected, setSelected, setIsToggled, hasLi
 
   return (
     <div className='flex'>
-      <button className={'flex px-100 sm:block w-full sm:w-auto sm:px-5 md:px-7 lg:px-10 py-2 cursor-pointer transition duration-400 ease-in-out ' +
+      <button className={'flex px-100 sm:block w-full sm:w-auto sm:px-2.5 md:px-5 lg:px-6 py-2 cursor-pointer transition duration-400 ease-in-out ' +
         (selected === index ? 'bg-[var(--white)] text-[var(--black)]' : 'text-[var(--grey)]')}
         onClick={onClick}>
         <a>
