@@ -104,7 +104,6 @@ const Navbar = ({ setToastTheme }: { setToastTheme: (str: string) => void }) => 
 
     const observerCallback: IntersectionObserverCallback = (entries) => {
       entries.forEach((entry) => {
-        console.log(isClicked)
         if (entry.isIntersecting && !isClicked) {
           setSelected(buttons.indexOf(entry.target.id));
         }

@@ -80,6 +80,7 @@ const Contact = () => {
       >
         Got a question or want to collaborate? Drop your details, and I'll be in touch soon!
       </motion.p>
+
       <motion.div
         className='flex flex-col min-[69.375rem]:flex-row min-[69.375rem]:justify-between min-[69.375rem]:items-start
         justify-center items-center w-full mt-10'
@@ -138,8 +139,22 @@ const Contact = () => {
             <EmailIcon />
           </SocialButton>
         </div>
-
       </motion.div>
+
+      {/* Control easter egg */}
+      <motion.div
+        className='flex flex-col items-center mt-10 min-[69.375rem]:mt-5.5'
+        initial={{ opacity: 0, y: 0 }}
+        whileInView={{ opacity: [0, 1, 1, 0], y: [0, 0, 0, 0] }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 15, delay: 15, times: [0, 0.2, 0.8, 1] }}
+      >
+        <p className='px-5 py-1 text-center text-[1rem] sm:text-xl font-bold bg-[#C0C8CA] text-[#10100F]'>
+          <span className='text-[#BC170F]'>THE BOARD:</span>
+          {' < We/I thank you for observing/viewing this Portfolio/Manifestation >'}
+        </p>
+      </motion.div>
+
     </Section>
   )
 }
