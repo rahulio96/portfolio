@@ -19,7 +19,7 @@ const Home = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className="flex flex-col justify-center items-center min-h-lvh pb-10 sm:pb-5"
+            className="flex flex-col justify-center items-center min-h-lvh pb-35 sm:pb-5"
             id='Home'
         >
             <motion.div
