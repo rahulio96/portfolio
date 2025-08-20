@@ -10,9 +10,9 @@ export const experiences: JobExperience[] = [
     // Intel SWE Internship
     {
         date: "JUN 2025 - ONGOING",
-        title: "Software Engineer Intern @ Intel",
-        desc: "Software Debug Intern with a focus on Python development and automation to support internal debugging workflows.",
-        skills: ["Python"],
+        title: "Debug Software Engineer Intern @ Intel",
+        desc: "Currently working with Intel’s Windows and AI Customer Engineering team to troubleshoot pre-production platforms by editing and flashing BIOS, leveraging Python tools to debug system issues, running hardware tests, and supporting platform validation through automation",
+        skills: ["Python", "PowerShell", "Windows"],
     },
 
     // eUnity Frontend SWE
