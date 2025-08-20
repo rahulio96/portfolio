@@ -147,7 +147,7 @@ const Contact = () => {
         initial={{ opacity: 0, y: 0 }}
         whileInView={{ opacity: [0, 1, 1, 0], y: [0, 0, 0, 0] }}
         viewport={{ once: true, amount: 0.3 }}
-        transition={{ duration: 15, delay: 15, times: [0, 0.2, 0.8, 1] }}
+        transition={{ duration: 25, delay: 60, times: [0, 0.2, 0.8, 1] }}
       >
         <p className='px-5 py-1 text-center text-[1rem] sm:text-xl font-bold bg-[#C0C8CA] text-[#10100F]'>
           <span className='text-[#BC170F]'>THE BOARD:</span>
