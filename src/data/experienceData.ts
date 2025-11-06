@@ -11,7 +11,7 @@ export const experiences: JobExperience[] = [
     {
         date: "JUN 2025 - ONGOING",
         title: "Debug Software Engineer Intern @ Intel",
-        desc: "Currently working with Intel’s Windows and AI Customer Engineering team to troubleshoot pre-production platforms by editing and flashing BIOS, leveraging Python tools to debug system issues, running hardware tests, and supporting platform validation through automation",
+        desc: "As part of Intel\’s Windows and AI Customer Engineering team, I'm automating and optimizing validation tool installation and maintenance, building a machine learning model to forecast platform needs across multiple teams, and supporting debugging and configuration of pre-production systems for current and next-generation processors.",
         skills: ["Python", "PowerShell", "Windows"],
     },
 
@@ -28,7 +28,7 @@ export const experiences: JobExperience[] = [
     {
         date: "JUN 2023 - AUG 2023",
         title: "Software Engineer Intern @ CodeDay",
-        desc: "Merged several pull requests to the npm CLI, the open source command line interface and package manager that’s relied on by 17M+ developers worldwide.",
+        desc: "After my initial micro-internship with CodeDay, I was offered to return for their full-length \"Labs\" internship. Merged several pull requests to the npm CLI, the open source command line interface and package manager that’s relied on by 17M+ developers worldwide.",
         skills: ["JavaScript", "Node.js", "Node Tap", "Scrum"],
         buttons: [
             ["GitHub", "https://github.com/npm/cli"],
@@ -43,7 +43,7 @@ export const experiences: JobExperience[] = [
     // CodeDay SWE Micro-Internship
     {
         date: "JAN 2023 - FEB 2023",
-        title: "Software Engineer Micro-Intern @ CodeDay",
+        title: "Software Engineer Intern @ CodeDay",
         desc: "Resolved an account linking issue in freeCodeCamp's Classroom Mode, an open source tool for teachers to track student progress in courses with 1M+ users.",
         skills: ["JavaScript", "Auth0", "PostgreSQL", "Prisma Studio"],
         buttons: [

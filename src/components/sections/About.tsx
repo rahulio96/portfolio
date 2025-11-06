@@ -11,9 +11,9 @@ const About = () => {
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 1 }}
       >
-        <p>I’m a computer science student at CSU Sacramento, graduating in December 2025, with hands-on experience building real-world software across startups, non-profits, and open-source projects.</p>
-        <p>As a Debug Software Engineer Intern at Intel, I'm renewing automation efforts and debugging platform issues. Previously, I built key mobile app features as a Frontend Developer at an early-stage startup.</p>
-        <p>I’ve contributed to open-source tools like npm (used by 17M+ developers), and led teams in delivering full-stack apps, including a chemical inventory manager mobile app for a client and an AI-powered education tool built during a hackathon.</p>
+        <p>Hi! I’m a computer science student at CSU Sacramento, graduating in December 2025, with experience building real-world software across large companies, startups, and non-profits</p>
+        <p>I’ve contributed to open-source projects like the npm CLI and DocsGPT, developed UI mobile app features for an early startup, and am currently automating workflows at Intel.</p>
+        <p>For projects, I’ve contributed to development and led teams on full-stack projects, including a chemical inventory mobile app for a school and an AI education tool for a hackathon.</p>
         <p>I’m passionate about learning, collaborating with talented people, and building impactful software that serves real users.</p>
       </motion.div>
     </Section>
