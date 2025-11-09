@@ -11,7 +11,7 @@ export const experiences: JobExperience[] = [
     {
         date: "JUN 2025 - ONGOING",
         title: "Debug Software Engineer Intern @ Intel",
-        desc: "As part of Intel\’s Windows and AI Customer Engineering team, I'm automating and optimizing validation tool installation and maintenance, building a machine learning model to forecast platform needs across multiple teams, and supporting debugging and configuration of pre-production systems for current and next-generation processors.",
+        desc: "As part of the Windows and AI Customer Engineering team, I'm automating and optimizing validation tools, building a machine learning model to forecast internal platform needs, and supporting debugging of current and next-generation Intel platforms.",
         skills: ["Python", "PowerShell", "Windows"],
     },
 
