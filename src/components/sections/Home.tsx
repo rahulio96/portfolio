@@ -26,7 +26,7 @@ const Home = () => {
                 initial={{ transform: "translateX(calc(-50%-100vw))" }}
                 animate={{ transform: "translateX(0px)" }}
                 transition={{ type: "spring", stiffness: 25, duration: 1 }}
-                className='text-center sm:text-left block w-[19.1rem] sm:w-[37.5rem] md:w-[45.8rem] lg:w-[56.2rem] justify-center font-bold text-4xl sm:text-5xl md:text-[3.3rem] lg:text-7xl'>
+                className='text-center sm:text-left block w-[20rem] sm:w-[39rem] md:w-[40rem] lg:w-[58rem] justify-center font-bold text-4xl sm:text-5xl md:text-[3rem] lg:text-7xl'>
                 <h1>Hi, I'm Rahul</h1>
                 <h1 className="flex justify-center sm:justify-start">
                     <span className='hidden sm:inline text-[var(--white)]'>{'I\'m ' + (isAn ? 'an' : 'a')}&nbsp;</span>
@@ -34,7 +34,7 @@ const Home = () => {
                         texts={['Software Engineer', 'Sac State Student', 'Frontend Developer', 'OSS Contributor', 'Full Stack Developer']}
                         staggerDuration={0.02}
                         rotationInterval={3500}
-                        mainClassName={'text-[var(--red)] text-[1.9rem] sm:text-5xl md:text-6xl lg:text-7xl'}
+                        mainClassName={'text-[var(--red)] text-[1.9rem] sm:text-5xl md:text-[3rem] lg:text-7xl'}
                         exit={{ y: "-20%", opacity: 0 }}
                         initial={{ y: "30%", opacity: 0 }}
                         setFlag={setIsAn}
