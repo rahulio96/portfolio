@@ -9,9 +9,10 @@ export interface JobExperience {
 export const experiences: JobExperience[] = [
     // Intel SWE Internship
     {
-        date: "JUN 2025 - ONGOING",
+        date: "JUN 2025 - JAN 2026",
         title: "Debug Software Engineer Intern @ Intel",
-        desc: "As part of the Windows and AI Customer Engineering team, I'm automating and optimizing validation tools, building a machine learning model to forecast internal platform needs, and supporting debugging of current and next-generation Intel platforms.",
+        desc: "As part of the Windows and AI Customer Engineering team at Intel, I automated and optimized customer validation tooling and built a multi-stage machine learning pipeline to forecast platform needs."
+            + "I also supported debugging efforts for current and next-generation Intel platforms for major OEM customers.",
         skills: ["Python", "PowerShell", "Windows"],
     },
 

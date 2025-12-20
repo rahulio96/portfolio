@@ -31,7 +31,7 @@ const Home = () => {
                 <h1 className="flex justify-center sm:justify-start">
                     <span className='hidden sm:inline text-[var(--white)]'>{'I\'m ' + (isAn ? 'an' : 'a')}&nbsp;</span>
                     <RotatingText
-                        texts={['Software Engineer', 'Sac State Student', 'Frontend Developer', 'OSS Contributor', 'Full Stack Developer']}
+                        texts={['Software Engineer', 'Sac State Graduate', 'Frontend Developer', 'OSS Contributor', 'Full Stack Developer']}
                         staggerDuration={0.02}
                         rotationInterval={3500}
                         mainClassName={'text-[var(--red)] text-[1.9rem] sm:text-5xl md:text-[3rem] lg:text-7xl'}

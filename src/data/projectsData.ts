@@ -99,7 +99,7 @@ export const projects: Project[] = [
 
     // Pharma Study
     {
-        title: 'Pharma Study Simulator',
+        title: 'Clinical Trial Management Platform',
         desc: 'Co-led a team of 7 for 5 months to build a pharmaceutical study web app for Vendia Inc.',
         src: 'projects/Pharma.png',
         alt: 'Blue background with title: Pharmaceutical Study Simulator. Shows the pharmaceutical study web on a laptop and phone.',
