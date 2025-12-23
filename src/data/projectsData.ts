@@ -13,7 +13,7 @@ export const projects: Project[] = [
         title: 'Offline AI',
         desc: 'Developed a desktop app that allows users to run AI models locally with Ollama, giving them full control over their data.',
         src: 'projects/OfflineAI.png',
-        alt: 'Dark red/orange background with title: Offline AI: A local, private desktop app for LLMs. Shows a laptop with the Offline AI app open, with the app\s logo on top.',
+        alt: 'Dark red/orange background with title: Offline AI: A local, private desktop app for LLMs. Shows a laptop with the Offline AI app open, with the app\'s logo on top.',
         skills: ['React', 'TypeScript', 'Ollama', 'Tauri', 'Rust', 'SQLite'],
         buttons: [
             ['GitHub', 'https://github.com/rahulio96/offline-ai'],
@@ -102,7 +102,7 @@ export const projects: Project[] = [
         title: 'Clinical Trial Management Platform',
         desc: 'Co-led a team of 7 for 5 months to build a pharmaceutical study web app for Vendia Inc.',
         src: 'projects/Pharma.png',
-        alt: 'Blue background with title: Pharmaceutical Study Simulator. Shows the pharmaceutical study web on a laptop and phone.',
+        alt: 'Blue background with title: Clinical Trial Management Platform. Shows the web on a laptop and phone.',
         skills: ['React', 'Firebase', 'Agile'],
         buttons: [
             ['GitHub', 'https://github.com/Angkaram/Pharmaceutical-Study-Web-App-Project'],

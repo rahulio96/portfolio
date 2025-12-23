@@ -23,7 +23,8 @@ const ExperienceItem = ({ exp }: { exp: JobExperience }) => {
       <h2 className='text-2xl sm:text-4xl font-bold text-[var(--white)]'>{exp.title}</h2>
 
       {sentences.map((sentence, index) => (
-        <p key={index} className='text-[1.1rem] sm:text-[1.4rem] text-[var(--lightgrey)]'>{sentence}</p>
+        <p key={index} className={`text-[1.1rem] sm:text-[1.4rem] text-[var(--lightgrey)] pt-1.5 sm:pt-2.5 
+          ${index == sentences.length-1 && 'pb-1.5 sm:pb-2.5'}`}>{sentence}</p>
       ))}
       
       <div className='justify-center items-center sm:inline'>
