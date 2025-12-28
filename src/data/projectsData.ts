@@ -8,6 +8,18 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+    // Amazon Price Prediction
+    {
+        title: 'Amazon Price Prediction',
+        desc: 'Built and experimented with multimodal TensorFlow models for Amazon item price prediction using text and image data.',
+        src: 'projects/Amazon.png',
+        alt: 'Orange background with Amazon logo with text below it that says Deep Learning Item Price Prediction, below that is: text icon + image icon -> tensorflow icon = $',
+        skills: ['Python', 'TensorFlow'],
+        buttons: [
+            ['GitHub', 'https://github.com/rahulio96/amazon-price-prediction'],
+        ],
+    },
+
     // Offline AI
     {
         title: 'Offline AI',
