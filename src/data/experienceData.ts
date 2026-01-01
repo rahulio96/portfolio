@@ -11,8 +11,8 @@ export const experiences: JobExperience[] = [
     {
         date: "JUN 2025 - JAN 2026",
         title: "Debug Software Engineer Intern @ Intel",
-        desc: "As part of the Customer Engineering team at Intel, I automated and optimized customer validation tooling and built a multi-stage machine learning pipeline to forecast platform needs."
-            + "I also supported debugging efforts for current and next-generation Intel platforms for major OEM customers.",
+        desc: "As part of the Customer Engineering team at Intel, I built a multi-stage machine learning pipeline to forecast platform needs, and automated and optimized customer validation tooling."
+            + "I also supported debugging efforts for current and next-generation Intel platforms for Intel's major OEM customers.",
         skills: ["Python", "PowerShell", "Windows"],
     },
 
@@ -29,7 +29,8 @@ export const experiences: JobExperience[] = [
     {
         date: "JUN 2023 - AUG 2023",
         title: "Software Engineer Intern @ CodeDay",
-        desc: "After my initial micro-internship with CodeDay, I was offered to return for their full-length \"Labs\" internship. Merged several pull requests to the npm CLI, the open source command line interface and package manager that’s relied on by 17M+ developers worldwide.",
+        desc: "After my initial micro-internship with CodeDay, I was offered to return for their full-length \"Labs\" internship. "
+            + "Merged several pull requests to the npm CLI, the open source command line interface and package manager that’s relied on by 17M+ developers worldwide.",
         skills: ["JavaScript", "Node.js", "Node Tap", "Scrum"],
         buttons: [
             ["GitHub", "https://github.com/npm/cli"],
