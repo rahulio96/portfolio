@@ -11,7 +11,7 @@ export const projects: Project[] = [
     // Amazon Price Prediction
     {
         title: 'Amazon Price Prediction',
-        desc: 'Built and experimented with multimodal TensorFlow models for Amazon item price prediction using text and image data.',
+        desc: 'Built and experimented with multimodal TensorFlow models for Amazon item price prediction using text and image data for a deep learning course.',
         src: 'projects/Amazon.png',
         alt: 'Orange background with Amazon logo with text below it that says Deep Learning Item Price Prediction, below that is: text icon + image icon -> tensorflow icon = $',
         skills: ['Python', 'TensorFlow'],
@@ -36,10 +36,10 @@ export const projects: Project[] = [
     // ChemTrack
     {
         title: 'ChemTrack',
-        desc: 'Collaborated on a 9-month client project to design and develop ChemTrack, a mobile app deployed via Apple TestFlight, as part of a team of 8.',
+        desc: 'Collaborated on a 9-month client project to design and develop ChemTrack, an ed-tech mobile app deployed via Apple TestFlight as part of a team of 8.',
         src: 'projects/ChemTrack.png',
         alt: 'Blue background with a phone and the following text: ChemTrack: A chemical inventory manager with QR code scanning built for schools. Built for Android and iOS devices.',
-        skills: ['React Native', 'Expo', 'TypeScript', 'Figma', 'Go', 'Jest', 'Agile'],
+        skills: ['React Native', 'TypeScript', 'Figma', 'Go', 'Jest'],
         buttons: [
             ['GitHub', 'https://github.com/ekjyotshinh/ChemTrack'],
             ['Demo GIF', 'https://imgur.com/a/chemtrack-demo-h9Tlx1o']
@@ -72,19 +72,6 @@ export const projects: Project[] = [
 
     },
 
-    // Digit Recog
-    {
-        title: 'Digit Recognizer',
-        desc: 'Built and deployed a web that allows users to draw digits and have a neural network predict the digit.',
-        src: 'projects/Digits.png',
-        alt: 'Yellow background with laptop and phone showing the digit recognizer web app. The laptop shows the number 7 and the phone shows the number 0.',
-        skills: ['React', 'Flask', 'AWS'],
-        buttons: [
-            ['GitHub', 'https://github.com/rahulio96/Digit-Recognition-App'],
-            ['View', 'https://drawdigits.netlify.app/']
-        ],
-    },
-
     // Minesweeper
     {
         title: 'Minesweeper',
@@ -97,15 +84,15 @@ export const projects: Project[] = [
         ],
     },
 
-    // MNIST
+    // Digit Recog
     {
-        title: 'MNIST Neural Network',
-        desc: 'Coded and trained a neural network to identify digits. Used in the Digit Recognizer project.',
-        src: 'projects/MNIST.png',
-        alt: 'Grey background with title: MNIST Neural Network. Shows a code snippet, handwritten digits 0,4,5,1 and several circles connected by lines.',
-        skills: ['Python', 'PyTorch'],
+        title: 'Digit Recognizer',
+        desc: 'Built and deployed a web that allows users to draw digits and have a neural network predict the digit.',
+        src: 'projects/Digits.png',
+        alt: 'Yellow background with laptop and phone showing the digit recognizer web app. The laptop shows the number 7 and the phone shows the number 0.',
+        skills: ['React', 'Flask', 'AWS'],
         buttons: [
-            ['GitHub', 'https://github.com/rahulio96/MNIST-Neural-Network']
+            ['GitHub', 'https://github.com/rahulio96/Digit-Recognition-App'],
         ],
     },
 
@@ -115,7 +102,7 @@ export const projects: Project[] = [
         desc: 'Co-led a team of 7 for 5 months to build a pharmaceutical study web app for Vendia Inc.',
         src: 'projects/Pharma.png',
         alt: 'Blue background with title: Clinical Trial Management Platform. Shows the web on a laptop and phone.',
-        skills: ['React', 'Firebase', 'Agile'],
+        skills: ['React', 'Firebase'],
         buttons: [
             ['GitHub', 'https://github.com/Angkaram/Pharmaceutical-Study-Web-App-Project'],
             ['Demo', 'https://www.youtube.com/watch?v=K2LDj28C5iA']

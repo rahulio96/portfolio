@@ -38,7 +38,7 @@ const ProjectBox = ({ project }: { project: Project }) => {
                 <div className="flex flex-col justify-start h-full  
                     space-y-1 min-[24.688rem]:space-y-5 sm:space-y-1.5 min-[63.75rem]:space-y-2.5">
                     <h3 className='text-[var(--red)] text-xl min-[20.938rem]:text-2xl min-[54.063rem]:text-3xl font-bold'>{project.title}</h3>
-                    <p>{project.desc}</p>
+                    <p className="font-medium text-[0.9rem] md:text-[1.1rem]">{project.desc}</p>
                     <Buttons color='black' buttons={project.buttons} isSmall={true} />
                     <SkillTags skills={project.skills} color='darkgrey' isSmall={true} />
                 </div>

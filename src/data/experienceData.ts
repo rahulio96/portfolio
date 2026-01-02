@@ -11,8 +11,8 @@ export const experiences: JobExperience[] = [
     {
         date: "JUN 2025 - JAN 2026",
         title: "Debug Software Engineer Intern @ Intel",
-        desc: "As part of the Customer Engineering team at Intel, I built a multi-stage machine learning pipeline to forecast platform needs, and automated and optimized customer validation tooling."
-            + "I also supported debugging efforts for current and next-generation Intel platforms for Intel's major OEM customers.",
+        desc: "Automated and optimized validation tooling for customer systems, and built a multi-stage machine learning pipeline to forecast platform needs, as part of the Customer Engineering team at Intel."
+            + "Supported debugging efforts for current and next-generation Intel platforms for major OEM customers.",
         skills: ["Python", "PowerShell", "Windows"],
     },
 
@@ -20,7 +20,7 @@ export const experiences: JobExperience[] = [
     {
         date: "APR 2024 - NOV 2024",
         title: "Frontend Software Engineer @ eUnity",
-        desc: "Developed and designed the user interface and screens of eUnity, a dating industry startup mobile app. "
+        desc: "Developed and designed the user interface and screens of eUnity, a dating industry startup mobile app."
             + "Implemented several pages, modals, and reusable UI components for key features of the app including initial user setup, premium purchase, and user profile settings.",
         skills: ["Flutter", "Figma"],
     },
@@ -29,7 +29,7 @@ export const experiences: JobExperience[] = [
     {
         date: "JUN 2023 - AUG 2023",
         title: "Software Engineer Intern @ CodeDay",
-        desc: "After my initial micro-internship with CodeDay, I was offered to return for their full-length \"Labs\" internship. "
+        desc: "After my initial micro-internship with CodeDay, I was offered to return for their full-length \"Labs\" internship."
             + "Merged several pull requests to the npm CLI, the open source command line interface and package manager that’s relied on by 17M+ developers worldwide.",
         skills: ["JavaScript", "Node.js", "Node Tap", "Scrum"],
         buttons: [
